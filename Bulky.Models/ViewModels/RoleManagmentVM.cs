@@ -8,12 +8,10 @@ using System.Threading.Tasks;
 
 namespace Bulky.Models.ViewModels
 {
-    public class ProductVM
+   public class RoleManagmentVM
     {
-        public Product Product { get; set; }
-
-        [ValidateNever]
-        public IEnumerable<SelectListItem> CategoryList { get; set; }
-        
+        public ApplicationUser ApplicationUser { get; set; }
+        public IEnumerable<SelectListItem> RoleList { get; set; }
+        public IEnumerable<SelectListItem> CompanyList { get; set; }
     }
 }
